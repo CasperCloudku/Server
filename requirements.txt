@@ -1,0 +1,4 @@
+pyfiglet==1.0.2
+animation==0.0.7
+pystyle==2.9
+requests==2.26.0
