@@ -66,8 +66,8 @@ def start():
     print(a)
     print("\n\nHere are the things you've entered.\nKindly check.")
     print(all_done)
-    print("\n\nIs it all correct? [y/n]")
-    isitdone = input("\n\nIs it all correct? [y/n]")
+    print("\n\nIs it all correct? y/n")
+    isitdone = input("[y/n]")
     if isitdone == "y" or isitdone != "n":
         # https://github.com/TeamUltroid/Ultroid/blob/31b9eb1f4f8059e0ae66adb74cb6e8174df12eac/resources/startup/locals.py#L35
         f = open(".env", "w")
