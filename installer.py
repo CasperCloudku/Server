@@ -13,6 +13,7 @@ def start():
     os.system("pip3 install -r requirements.txt")
     os.system("pip3 install requests")
     os.system("pip3 install pyfiglet")
+    os.system("pip3 install animation")
     print("\nStarting...")
     os.system("python3 flood.py")
     os.system("clear")
