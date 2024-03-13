@@ -66,6 +66,7 @@ def start():
     print(a)
     print("\n\nHere are the things you've entered.\nKindly check.")
     print(all_done)
+    print("
     isitdone = input("\n\nIs it all correct? [y/n]")
     if isitdone == "y" or isitdone != "n":
         # https://github.com/TeamUltroid/Ultroid/blob/31b9eb1f4f8059e0ae66adb74cb6e8174df12eac/resources/startup/locals.py#L35
@@ -78,13 +79,15 @@ def start():
     print("\nCongrats. All done!\nTime to start the bot!")
     print("\nInstalling requirements... This might take a while...")
     os.system("pip3 install --no-cache-dir -r requirements.txt")
+    os.system("apt-get install python3-requests")
+    print("Enter 'yes/y' to Install other requirements, required for local deployment.")
     ask = input(
         "Enter 'yes/y' to Install other requirements, required for local deployment."
     )
     if ask.lower().startswith("y"):
         print("Started Installing...")
         os.system(
-            "pip3 install --no-cache-dir -r resources/startup/optional-requirements.txt && pip3 install requests"
+            "pip3 install --no-cache-dir -r resources/startup/optional-requirements.txt"
         )
     else:
         print("Skipped!")
